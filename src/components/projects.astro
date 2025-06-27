@@ -1,6 +1,6 @@
 ---
 import GithubIcon from "@icon/GithubIcon.astro";
-import { PROJECTS } from "@utils/data";
+import { GITHUB_REPOSITORIES_URL, PROJECTS } from "@utils/data";
 import PreviewIcon from "@icon/PreviewIcon.astro";
 import Tag from "./Tag.astro";
 ---
@@ -76,7 +76,7 @@ import Tag from "./Tag.astro";
     </div>
     <a
       target="_blank"
-      href="https://github.com/Gothsec?tab=repositories"
+      href={GITHUB_REPOSITORIES_URL}
       aria-label="GitHub"
       class="w-full flex items-center justify-center gap-2 mt-9 text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-[var(--white-icon-tr)] p-3 rounded-full bg-[#1414149c] hover:bg-[var(--white-icon-tr)] hover:scale-105"
     >

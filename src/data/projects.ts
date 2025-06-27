@@ -1,7 +1,5 @@
 import type { Project } from "../types/components";
 
-// PROYECTOS DESTACADOS
-// Puedes agregar, quitar o modificar proyectos fácilmente. Usa los campos opcionales para más flexibilidad.
 export const PROJECTS: Project[] = [
   {
     title: "MoviesForDevs",
