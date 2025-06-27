@@ -1,3 +1,4 @@
+// ICONOS (Astro components)
 import GithubIcon from "../icon/GithubIcon.astro";
 import LinkedinIcon from "../icon/LinkedinIcon.astro";
 import GmailIcon from "../icon/GmailIcon.astro";
@@ -14,6 +15,7 @@ import JavascriptIcon from "../icon/javaScript.astro";
 import GitIcon from "../icon/git.astro";
 import MysqlIcon from "../icon/mysql.astro";
 
+// LINKS Y DATOS DE CONTACTO
 export const GITHUB_URL = "https://github.com/BrankoMuruaga";
 export const GITHUB_REPOSITORIES_URL =
   "https://github.com/BrankoMuruaga?tab=repositories";
@@ -22,6 +24,7 @@ export const LINKEDIN_URL =
 export const GMAIL = "muruagabranko253@gmail.com";
 export const FORMSPREE_URL = "https://formspree.io/f/mqabgkyj";
 
+// REDES SOCIALES
 export const SOCIALS = [
   {
     name: "GitHub",
@@ -40,6 +43,7 @@ export const SOCIALS = [
   },
 ];
 
+// STACK TECNOLÓGICO PRINCIPAL (footer)
 export const TECH_STACKS = [
   {
     desc: "Hecho con",
@@ -61,6 +65,7 @@ export const TECH_STACKS = [
   },
 ];
 
+// DATOS DE LA SECCIÓN HOME
 export const HOME_INFO = {
   name: "Branko Muruaga",
   subtitle: "Desarrollador de Software",
@@ -69,6 +74,7 @@ export const HOME_INFO = {
   socials: SOCIALS,
 };
 
+// DATOS DE LA SECCIÓN CONTACTO
 export const CONTACT_INFO = {
   title: "Hablemos",
   subtitle: "Contacto",
@@ -85,6 +91,7 @@ export const CONTACT_INFO = {
   success: "✅ ¡Gracias por tu mensaje!",
 };
 
+// ITEMS DE NAVEGACIÓN PRINCIPAL
 export const NAV_ITEMS = [
   {
     label: "Inicio",
@@ -100,6 +107,7 @@ export const NAV_ITEMS = [
   },
 ];
 
+// LISTADO DE TECNOLOGÍAS (logoWall)
 export const TECHNOLOGIES = [
   {
     name: "Astro",
@@ -147,6 +155,7 @@ export const TECHNOLOGIES = [
   },
 ];
 
+// PROYECTOS DESTACADOS
 export const PROJECTS = [
   {
     title: "MoviesForDevs",
