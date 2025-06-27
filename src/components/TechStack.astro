@@ -1,0 +1,17 @@
+---
+import type { Tech } from "../types/components";
+const { stack } = Astro.props as { stack: Tech[] };
+---
+
+<div class="grid grid-cols-1 gap-3 w-full max-w-xs py-6">
+  {
+    stack.map(({ icon: Icon, desc, name }) => (
+      <div class="flex items-center gap-2">
+        <Icon className="size-6" />
+        <span class="text-md text-[var(--white-icon)]">
+          {desc} <b>{name}</b>
+        </span>
+      </div>
+    ))
+  }
+</div>

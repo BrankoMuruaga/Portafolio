@@ -1,17 +1,5 @@
 ---
-const technologies = [
-  "astro",
-  "react",
-  "typeScript",
-  "tailwindcss",
-  "next",
-  "nodejs",
-  "HTML5",
-  "CSS3",
-  "javaScript",
-  "git",
-  "mysql",
-];
+import { TECHNOLOGIES } from "@/utils/data";
 ---
 
 <div class="relative overflow-x-hidden py-8 cursor-default">
@@ -26,21 +14,16 @@ const technologies = [
 
   <div class="flex animate-scroll hover:animate-paused gap-12 md:gap-20 w-max">
     {
-      [...technologies, ...technologies, ...technologies].map((tech) => (
-        <div class="flex items-center gap-2 group transition-all duration-300">
-          <img
-            src={`/svg/${tech}.svg`}
-            alt={tech}
-            class="h-7 w-auto object-contain transition-transform group-hover:scale-110 opacity-60"
-            width="30"
-            height="30"
-            loading="lazy"
-          />
-          <span class="text-lg font-medium text-[var(--white-icon)]">
-            {tech.charAt(0).toUpperCase() + tech.slice(1)}
-          </span>
-        </div>
-      ))
+      [...TECHNOLOGIES, ...TECHNOLOGIES, ...TECHNOLOGIES].map(
+        ({ icon: Icon, name }) => (
+          <div class="flex items-center gap-2 group transition-all duration-300 hover:scale-110">
+            <Icon className="size-10" />
+            <span class="text-lg font-medium text-[var(--white-icon)]">
+              {name}
+            </span>
+          </div>
+        )
+      )
     }
   </div>
 </div>

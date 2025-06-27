@@ -1,0 +1,22 @@
+---
+import type { SocialLink } from "../types/components";
+
+const { links } = Astro.props as { links: SocialLink[] };
+---
+
+<div class="flex space-x-6 sm:space-x-8">
+  {
+    links.map((link: SocialLink) => (
+      <a
+        href={link.href}
+        target="_blank"
+        class="flex flex-col items-center group"
+        aria-label={link.label}
+      >
+        <div class="text-[var(--white-icon)] hover:text-[var(--white)] transition duration-300 ease-in-out">
+          <link.icon />
+        </div>
+      </a>
+    ))
+  }
+</div>
