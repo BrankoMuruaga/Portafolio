@@ -156,33 +156,5 @@ export const TECHNOLOGIES = [
 ];
 
 // PROYECTOS DESTACADOS
-export const PROJECTS = [
-  {
-    title: "MoviesForDevs",
-    image: "/moviesfordevs.png",
-    link: "https://github.com/gothsec/MoviesForDevs",
-    preview: "https://movies-for-devs.vercel.app",
-    status: "En desarrollo",
-  },
-  {
-    title: "StockIn",
-    image: "/stockin.png",
-    link: "https://github.com/gothsec/stockin-demo",
-    preview: "https://stockin-demo.vercel.app",
-    status: "En desarrollo",
-  },
-  {
-    title: "Svgl.app",
-    image: "/svgl.png",
-    link: "https://github.com/pheralb/svgl",
-    preview: "https://svgl.app",
-    status: "Colaborador",
-  },
-  {
-    title: "Tron Legacy Web",
-    image: "/tron.png",
-    link: "https://github.com/Gothsec/Tron-Legacy-web",
-    preview: "https://tron-legacy-web.vercel.app/",
-    status: "Template (no oficial)",
-  },
-];
+// Ahora los proyectos están en src/data/projects.ts
+export { PROJECTS } from "../data/projects";

@@ -1,3 +1,12 @@
+export interface Project {
+  title: string;
+  image: string;
+  link: string;
+  preview?: string;
+  status?: string;
+  description?: string;
+  tags?: string[];
+}
 // Tipos y interfaces extraídos de los componentes de la carpeta components
 
 export interface Tech {

@@ -2,6 +2,7 @@
 import GithubIcon from "@icon/GithubIcon.astro";
 import { PROJECTS } from "@utils/data";
 import PreviewIcon from "@icon/PreviewIcon.astro";
+import Tag from "./Tag.astro";
 ---
 
 <section
@@ -36,6 +37,18 @@ import PreviewIcon from "@icon/PreviewIcon.astro";
                   <span class="py-1 text-sm text-[var(--white-icon)]">
                     {project.status}
                   </span>
+                  {project.description && (
+                    <p class="text-sm text-[var(--white-icon)] mt-1 mb-2">
+                      {project.description}
+                    </p>
+                  )}
+                  {project.tags && project.tags.length > 0 && (
+                    <div class="flex flex-wrap gap-1 mt-1 mb-1">
+                      {project.tags.map((tag) => (
+                        <Tag label={tag} />
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div class="flex gap-2 ml-auto">
                   <a
