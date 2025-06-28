@@ -1,76 +1,76 @@
-# Portfolio
-![OscarHernandez-portfolio](https://github.com/user-attachments/assets/e284a42b-15c5-495c-99c7-ad5c1eb3bbe7)
-![Deploy Status](https://img.shields.io/badge/Deploy-Vercel-black?style=flat&logo=vercel)
+# 🚀 Portafolio de Branko Muruaga
+
+¡Bienvenido/a a mi portafolio personal!  
+Aquí encontrarás una selección de mis proyectos, tecnologías favoritas y formas de contactarme. Este sitio está pensado para mostrar mi trabajo como desarrollador y facilitar el contacto para oportunidades laborales, colaboraciones o freelance.
 
 ---
 
-[Demo](https://oscarhernandez.vercel.app/)
+## 👨‍💻 Sobre mí
 
-[Astro Themes](https://astro.build/themes/details/dark-minimal/)
+Soy **Branko Muruaga**, desarrollador de software enfocado en crear experiencias digitales modernas, fluidas y atractivas. Me apasiona el frontend, pero también disfruto trabajar en el backend y aprender nuevas tecnologías.
 
-[ReactBits Showcase](https://www.reactbits.dev/showcase) 
+---
 
-The component `<LetterGlitch \>` was taken from [ReactBits.dev](https://www.reactbits.dev/)
+## 🛠️ Tecnologías principales
 
-## **Stack**  
-### **Frontend**  
-![Astro](https://img.shields.io/badge/Astro-FF5D01?logo=astro&logoColor=white)
-![Tailwind](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwind-css&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+- **Astro** (framework principal del sitio)
+- **React**
+- **TypeScript**
+- **TailwindCSS**
+- **Node.js**
+- **Next.js**
+- **HTML5, CSS3, JavaScript**
+- **Git & GitHub**
+- **MySQL**
 
-### **Tools**  
-![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)
-![Prettier](https://img.shields.io/badge/Prettier-F7B93E?logo=prettier&logoColor=black)
-![Canva](https://img.shields.io/badge/Canva-c900c3?logo=canva&logoColor=white)
+---
 
-### **Show your favorite Spotify album (or your own)** ![Spotify](https://img.shields.io/badge/Spotify-06cc1a?logo=spotify&logoColor=white)
-1. Choose your Spotify album
-2. Access the share options
-3. Select 'copy embed code'
-```
-<iframe src="https://open.spotify.com/embed/album/ALBUM_ID" style="border-radius:12px border:0;" class="w-full h-40" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-```
-4. Insert the embed code on footer.astro
+## 📂 Proyectos destacados
 
-That's it!
+Aquí puedes ver algunos de mis proyectos más relevantes.  
+Visita la sección de [Proyectos](#projects) en el sitio para ver más detalles y enlaces.
 
-## **Project structure**
-```
-public/
-└── svg/
-src/
-├── Components/
-|    ├── contact.astro
-|    ├── footer.astro
-|    ├── home.astro
-|    ├── logoWall.astro
-|    ├── nav.astro
-|    └── projects.astro
-├── layouts/
-|    └── Layout.astro
-├── React/
-|    ├── LetterGlitch.tsx
-|    ├── LikeButton.tsx
-|    └── SkillsList.tsx
-└── pages/
-     └── index.astro
-```
+---
 
-## **Local configuration** 
-1. Clone the repo:  
-```
-git clone https://github.com/gothsec/portfolio
-```
-2. Install dependencies:
-```  
+## 🌐 Demo
+
+Puedes ver el portafolio en línea aquí:  
+[https://brankomuruaga.vercel.app/](https://brankomuruaga.vercel.app/)
+
+---
+
+## 📫 Contacto
+
+¿Tienes una propuesta, proyecto o simplemente quieres saludar?  
+Puedes contactarme por:
+
+- [LinkedIn](https://www.linkedin.com/in/branko-muruaga-17b332249/)
+- [Email](mailto:muruagabranko253@gmail.com)
+- [GitHub](https://github.com/BrankoMuruaga)
+
+---
+
+## ⚡ Créditos
+
+Este portafolio está basado en el trabajo de [Oscar Hernandez](https://github.com/Gothsec/Portfolio).
+
+---
+
+## 🛠️ Instalación y desarrollo
+
+```bash
+# Clona el repositorio
+git clone https://github.com/BrankoMuruaga/Portfolio.git
+cd Portfolio
+
+# Instala dependencias
 npm install
-```
-3. Start the develpoment server:
-```  
+
+# Inicia el servidor de desarrollo
 npm run dev
 ```
 
-> **Important Notice:**  
-> This project is licensed under the [MIT License](https://opensource.org/licenses/mit).  
-> According to the license terms, any redistribution (including compiled or modified versions), you **must** retain the original copyright 
-> notice and the full license text. Copyright © 2025 Oscar Hernandez. All rights reserved.
+---
+
+¡Gracias por visitar mi portafolio!  
+Si te interesa trabajar conmigo, no dudes en contactarme.
