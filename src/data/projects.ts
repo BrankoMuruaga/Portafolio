@@ -38,4 +38,13 @@ export const PROJECTS: Project[] = [
     description: "Web del curso de Programación Orientada a Objetos.",
     tags: ["Astro", "CSS3"],
   },
+  {
+    title: "Coro de la Universidad Nacional de Hurlingham",
+    image: "/Coro.png",
+    link: "https://github.com/corounahur/corounahur.github.io",
+    preview: "https://corounahur.github.io/",
+    status: "Colaborador",
+    description: "Web del Coro de la Universidad Nacional de Hurlingham.",
+    tags: ["Astro", "TailwindCSS", "Typescript"],
+  },
 ];
