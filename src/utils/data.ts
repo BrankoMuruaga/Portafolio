@@ -17,8 +17,7 @@ import MysqlIcon from "../icon/mysql.astro";
 
 // LINKS Y DATOS DE CONTACTO
 export const GITHUB_URL = "https://github.com/BrankoMuruaga";
-export const GITHUB_REPOSITORIES_URL =
-  "https://github.com/BrankoMuruaga?tab=repositories";
+export const GITHUB_REPOSITORIES_URL = `${GITHUB_URL}?tab=repositories`;
 export const LINKEDIN_URL =
   "https://www.linkedin.com/in/branko-muruaga-17b332249/";
 export const GMAIL = "muruagabranko253@gmail.com";
@@ -28,17 +27,20 @@ export const FORMSPREE_URL = "https://formspree.io/f/mqabgkyj";
 export const SOCIALS = [
   {
     name: "GitHub",
-    url: GITHUB_URL,
+    href: GITHUB_REPOSITORIES_URL,
+    label: "GitHub",
     icon: GithubIcon,
   },
   {
     name: "LinkedIn",
-    url: LINKEDIN_URL,
+    href: LINKEDIN_URL,
+    label: "LinkedIn",
     icon: LinkedinIcon,
   },
   {
     name: "Gmail",
-    url: `mailto:${GMAIL}`,
+    href: `mailto:${GMAIL}`,
+    label: "Gmail",
     icon: GmailIcon,
   },
 ];

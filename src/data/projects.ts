@@ -2,13 +2,31 @@ import type { Project } from "../types/components";
 
 export const PROJECTS: Project[] = [
   {
+    title: "Bermelha",
+    image: "/Bermelha.png",
+    link: "https://github.com/BrankoMuruaga/Bermelha",
+    preview: "https://bermelha.com/",
+    status: "Finalizado",
+    description: "Venta de amigurumis con pasarela de pagos.",
+    tags: ["Astro", "React", "Typescript", "TailwindCSS", "Mercadopago"],
+  },
+  {
     title: "Chepas",
     image: "/Chepas.png",
     link: "https://github.com/BrankoMuruaga/chepas",
     preview: "https://chepasarg.vercel.app/",
-    status: "En desarrollo",
+    status: "Finalizado",
     description: "Pagina de venta de chipas de Argentina.",
     tags: ["Astro", "Typescript", "TailwindCSS"],
+  },
+  {
+    title: "Picturecode",
+    image: "/Picturecode.png",
+    link: "https://github.com/BrankoMuruaga/Picturecode",
+    preview: "https://picturecode-studio.vercel.app/",
+    status: "En desarrollo",
+    description: "Genera imágenes a partir de código.",
+    tags: ["Astro", "Typescript", "TailwindCSS", "React"],
   },
   {
     title: "Struct notes",
