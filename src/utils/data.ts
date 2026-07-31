@@ -72,7 +72,7 @@ export const HOME_INFO = {
   name: "Branko Muruaga",
   subtitle: "Desarrollador de Software",
   description:
-    "Transformando ideas en experiencias digitales interactivas y fluidas con desarrollo <span class='text-[var(--sec)] shiny-sec'>frontend</span> de vanguardia.",
+    "Desarrollo <span class='text-[var(--sec)] shiny-sec'>frontend</span> moderno para crear experiencias digitales interactivas, fluidas y a la medida de tus ideas.",
   socials: SOCIALS,
 };
 
