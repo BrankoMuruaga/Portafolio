@@ -1,0 +1,88 @@
+---
+import GithubIcon from "@icon/GithubIcon.astro";
+import PreviewIcon from "@icon/PreviewIcon.astro";
+import Tag from "./Tag.astro";
+
+interface Props {
+  title: string;
+  image: string;
+  status?: string;
+  description?: string;
+  tags?: string[];
+  link: string;
+  preview?: string;
+}
+
+const { title, image, status, description, tags, link, preview } = Astro.props;
+---
+
+<div class="group flex flex-col h-full">
+  <a
+    href={preview}
+    target="_blank"
+    rel="noopener noreferrer"
+    class="block mb-4 rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+  >
+    <img
+      src={image}
+      alt={title}
+      class="w-full h-48 md:h-72 object-cover group-hover:scale-105 transition-transform duration-300"
+      loading="lazy"
+    />
+  </a>
+
+  <div class="flex flex-col md:flex-row md:items-start px-3 gap-4 flex-grow">
+    {/* Contenedor del texto */}
+    <div class="flex-grow flex flex-col h-full">
+      <a
+        href={preview}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="hover:underline"
+      >
+        <h4 class="text-2xl font-semibold">{title}</h4>
+      </a>
+
+      <span class="py-1 text-sm text-[var(--white-icon)]">
+        {status}
+      </span>
+
+      {
+        description && (
+          <p class="text-sm text-[var(--white-icon)] mt-2 mb-4">
+            {description}
+          </p>
+        )
+      }
+
+      {
+        tags && tags.length > 0 && (
+          <div class="flex flex-wrap gap-1 mt-auto">
+            {tags.map((tag) => (
+              <Tag label={tag} />
+            ))}
+          </div>
+        )
+      }
+    </div>
+
+    <div class="flex gap-2 justify-end md:ml-auto shrink-0 mt-2 md:mt-0">
+      <a
+        target="_blank"
+        href={link}
+        aria-label="GitHub"
+        class="size-12 md:size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
+      >
+        <GithubIcon />
+      </a>
+      <a
+        target="_blank"
+        href={preview}
+        aria-label="Preview"
+        class="size-12 md:size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
+      >
+        <PreviewIcon />
+      </a>
+    </div>
+  </div>
+</div>
