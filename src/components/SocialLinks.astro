@@ -10,6 +10,7 @@ const { links } = Astro.props as { links: SocialLink[] };
       <a
         href={link.href}
         target="_blank"
+        rel="noopener noreferrer"
         class="flex flex-col items-center group cursor-pointer"
         aria-label={link.label}
       >
