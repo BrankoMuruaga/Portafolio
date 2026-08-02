@@ -22,6 +22,16 @@ export const PROJECTS: Project[] = [
     tags: ["Astro", "Typescript", "TailwindCSS"],
   },
   {
+    title: "Divisor de imagenes",
+    image: "/Divisor_imagenes.webp",
+    link: "https://github.com/BrankoMuruaga/divisor-de-imagenes",
+    preview: "https://divisor-de-imagenes.vercel.app/",
+    status: "En desarrollo",
+    description:
+      "Aplicación web que permite dividir imágenes en múltiples partes, generando un archivo comprimido o PDF listo para descargar y compartir.",
+    tags: ["Astro", "TailwindCSS", "React"],
+  },
+  {
     title: "Chepas",
     image: "/Chepas.webp",
     link: "https://github.com/BrankoMuruaga/chepas",
