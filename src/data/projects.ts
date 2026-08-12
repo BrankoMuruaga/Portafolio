@@ -42,11 +42,20 @@ export const PROJECTS: Project[] = [
     tags: ["Astro", "Typescript", "TailwindCSS"],
   },
   {
+    title: "Catálogo de automatizaciónes",
+    image: "/CatalogoAutomatizaciones.webp",
+    link: "https://github.com/BrankoMuruaga/CatalogoRPA",
+    status: "Finalizado",
+    description:
+      "Catalogo de automatizaciónes de Blue Prism, desarrollado para empresa financiera, con el objetivo de centralizar y organizar los procesos automatizados, junto a su documentacion en un solo lugar.",
+    tags: ["Astro", "Typescript", "TailwindCSS", "React"],
+  },
+  {
     title: "Picturecode",
     image: "/Picturecode.webp",
     link: "https://github.com/BrankoMuruaga/Picturecode",
     preview: "https://picturecode-studio.vercel.app/",
-    status: "En desarrollo",
+    status: "Finalizado",
     description:
       "Herramienta de desarrollo para transformar fragmentos de código en imágenes estéticas y listas para compartir en redes sociales.",
     tags: ["Astro", "Typescript", "TailwindCSS", "React"],
@@ -56,7 +65,7 @@ export const PROJECTS: Project[] = [
     image: "/Struct_notes.webp",
     link: "https://github.com/BrankoMuruaga/StructNotes",
     preview: "https://struct-notes.vercel.app/",
-    status: "En desarrollo",
+    status: "Finalizado",
     description:
       "Aplicación web para la gestión e integración de notas estructuradas utilizando sintaxis Markdown de forma intuitiva.",
     tags: ["Astro", "Typescript", "TailwindCSS"],
@@ -66,7 +75,7 @@ export const PROJECTS: Project[] = [
     image: "/LogJS.webp",
     link: "https://github.com/BrankoMuruaga/logjs",
     preview: "https://logjs-rho.vercel.app/",
-    status: "En desarrollo",
+    status: "Finalizado",
     description:
       "Playground ligero inspirado en RunJS que permite ejecutar, probar y depurar código JavaScript en tiempo real directamente desde el navegador.",
     tags: ["Astro", "TypeScript"],

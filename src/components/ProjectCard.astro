@@ -67,22 +67,30 @@ const { title, image, status, description, tags, link, preview } = Astro.props;
     </div>
 
     <div class="flex gap-2 justify-end md:ml-auto shrink-0 mt-2 md:mt-0">
-      <a
-        target="_blank"
-        href={link}
-        aria-label="GitHub"
-        class="size-12 md:size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
-      >
-        <GithubIcon />
-      </a>
-      <a
-        target="_blank"
-        href={preview}
-        aria-label="Preview"
-        class="size-12 md:size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
-      >
-        <PreviewIcon />
-      </a>
+      {
+        link && (
+          <a
+            target="_blank"
+            href={link}
+            aria-label="GitHub"
+            class="size-12 md:size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
+          >
+            <GithubIcon />
+          </a>
+        )
+      }
+      {
+        preview && (
+          <a
+            target="_blank"
+            href={preview}
+            aria-label="Preview"
+            class="size-12 md:size-14 flex justify-center items-center text-[var(--white-icon)] hover:text-white transition duration-300 ease-in-out border border-1 border-[var(--white-icon-tr)] p-3 rounded-xl bg-[#1414149c] hover:bg-[var(--white-icon-tr)]"
+          >
+            <PreviewIcon />
+          </a>
+        )
+      }
     </div>
   </div>
 </div>
